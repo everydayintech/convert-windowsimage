@@ -4159,7 +4159,7 @@ namespace WIM2VHD {
                             $BCDinVHD -eq "VirtualMachine"
                         )
                         {
-                            $PartitionSystem = New-Partition -DiskNumber $openVhd.DiskIndex -Size 100MB -GptType '{c12a7328-f81f-11d2-ba4b-00a0c93ec93b}'
+                            $PartitionSystem = New-Partition -DiskNumber $openVhd.DiskIndex -Size 500MB -GptType '{c12a7328-f81f-11d2-ba4b-00a0c93ec93b}'
                             Write-W2VInfo "System Partition created"
 
                         }
